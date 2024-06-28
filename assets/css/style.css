@@ -1,3 +1,120 @@
 * {
-  background-color: skyblue;
+  background-color: #ebebf6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+header {
+  background-color: #25272b;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 48px;
+  background-color: #689395;
+  padding-left: 35px;
+  padding-right: 15px;
+  color: #26272d;
+}
+
+header nav {
+  float: right;
+  background-color: #25272b;
+  padding-top: 15px;
+  padding-right: 15px;
+}
+
+header a {
+  font-size: 20px;
+  margin-left: 25px;
+  color: #669092;
+  background-color: #25272b;
+}
+
+.heading-image {
+  height: 300px;
+  width: 100%;
+  background-image: url("../images/image-placeholder-500x500.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#about-section {
+  display: flex;
+  margin: 40px;
+  align-items: stretch;
+}
+
+#work-section {
+  display: flex;
+  margin: 40px;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+#project-name {
+  background-color: #87c5c7;
+}
+
+#contact-section {
+  display: flex;
+  margin: 40px;
+  align-items: stretch;
+}
+
+h2,
+h3 {
+  font-size: 30px;
+  color: #3c4e6c;
+}
+
+img {
+  border-style: solid;
+  border-width: 10px;
+  border-color: #87c5c7;
+}
+
+p {
+  font-size: 20px;
+  color: #3c4e6c;
+}
+
+footer {
+  padding: 30px;
+  clear: both;
+  text-align: center;
+  font-size: 16px;
+}
+
+footer h4 {
+  color: #3c4e6c;
+  font-size: 20px;
+  border: 10px;
+}
+
+footer a {
+  color: #3c4e6c;
+}
+
+footer a:hover {
+  color: #ebebf6;
+  background-color: #3c4e6c;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  header, main {
+    min-width: 500px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header a {
+    margin: 5px;
+  }
 }

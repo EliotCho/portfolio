@@ -34,6 +34,15 @@ header a {
   margin-left: 25px;
   color: #669092;
   background-color: #25272b;
+  font-weight: bold;
+  padding: 5px;
+}
+
+header a:hover {
+  color: #25272b;
+  background-color: #669092;
+  text-decoration: none;
+  padding: 5px;
 }
 
 .heading-image {
@@ -54,25 +63,32 @@ header a {
 #about-section {
   display: flex;
   margin: 40px;
-  align-items: stretch;
-}
-
-#work-item {
-  position: relative;
-  text-align: center;
-}
-
-#project-name {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
 }
 
 #work-section {
   display: flex;
   margin: 40px;
   flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: flex-end;
+}
+
+#work{
   align-items: stretch;
+  display: inline-block;
+}
+
+.work-main-item {
+  display: flex;
+  align-content: center;
+  margin: 5px;
+}
+
+.work-item {
+  display: inline-block;
+  align-content: center;
+  margin: 5px;
 }
 
 #project-name {
@@ -82,7 +98,7 @@ header a {
 #contact-section {
   display: flex;
   margin: 40px;
-  align-items: stretch;
+  /* align-items: stretch; */
 }
 
 h2,
@@ -108,6 +124,8 @@ footer {
   text-align: center;
   font-size: 16px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #contact-section {
@@ -122,26 +140,29 @@ footer h4 {
   color: #3c4e6c;
   font-size: 40px;
   border: 10px;
-  margin: 10px;
-  margin-right: 100px;
 }
 
-footer p, footer a {
+footer p,
+footer a {
   display: inline-block;
   color: #3c4e6c;
   margin: 15px;
   font-size: 20px;
+  padding: 5px;
+  flex-wrap: wrap;
 }
 
 footer a:hover {
   color: #ebebf6;
   background-color: #3c4e6c;
   text-decoration: none;
+  padding: 5px;
 }
 
 @media screen and (max-width: 768px) {
   header,
-  main, footer {
+  main,
+  footer {
     flex-direction: column;
     align-items: center;
   }
@@ -159,10 +180,10 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
   }
-  
-  footer p, footer a {
+
+  footer p,
+  footer a {
     flex-direction: column;
     align-items: center;
   }
-  
 }

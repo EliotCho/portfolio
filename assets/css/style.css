@@ -74,19 +74,14 @@ header a:hover {
   justify-content: flex-end;
 }
 
-#work{
+#work {
   align-items: stretch;
   display: inline-block;
 }
 
-.work-main-item {
-  display: flex;
-  align-content: center;
-  margin: 5px;
-}
-
 .work-item {
   display: inline-block;
+  flex: 2 1 200px;
   align-content: center;
   margin: 5px;
 }
@@ -98,7 +93,6 @@ header a:hover {
 #contact-section {
   display: flex;
   margin: 40px;
-  /* align-items: stretch; */
 }
 
 h2,
@@ -166,6 +160,7 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
   }
+
   .heading-image {
     max-width: 700px;
   }
@@ -173,7 +168,14 @@ footer a:hover {
   header a {
     margin: 5px;
   }
-
+  #work-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  #about-section {
+    flex-direction: column;
+    align-items: center;
+  }
   footer h4 {
     margin: 0px;
     border: 0px;

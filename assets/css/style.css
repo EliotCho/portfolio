@@ -68,22 +68,25 @@ header a:hover {
 #work-section {
   display: flex;
   margin: 40px;
+  justify-content: space-between;
+}
+
+#project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-project {
+  flex: 2 1 100%;
+}
+
+.sub-project {
+  display: flex;
+  flex: 1 1 50%;
   flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: center;
-  justify-content: flex-end;
-}
-
-#work {
-  align-items: stretch;
-  display: inline-block;
-}
-
-.work-item {
-  display: inline-block;
-  flex: 2 1 200px;
-  align-content: center;
-  margin: 5px;
+  justify-content: center;
+  width: 80%;
 }
 
 #project-name {
@@ -171,6 +174,22 @@ footer a:hover {
   #work-section {
     flex-direction: column;
     align-items: center;
+  }
+
+  .main-project {
+    align-items: center;
+    flex: 1 1 100%;
+  }
+
+  .sub-project {
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 100%;
+    align-content: center;
+  }
+
+  #about, #work, #me {
+    margin: 10px;
   }
   #about-section {
     flex-direction: column;

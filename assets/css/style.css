@@ -1,9 +1,14 @@
+/* applied to everything on page */
 * {
   background-color: #ebebf6;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+/* header styling starts here */
+/* header styling */
+/* bg color, padding on top and bottom
+display setting, content separation, and align items in center */
 header {
   background-color: #25272b;
   padding-top: 20px;
@@ -13,6 +18,9 @@ header {
   align-items: center;
 }
 
+/* h1 in header styling
+display setting, font size, and bg color
+padding on left and right and text color change */
 header h1 {
   display: inline-block;
   font-size: 48px;
@@ -22,6 +30,9 @@ header h1 {
   color: #26272d;
 }
 
+/* nav styling
+float to right and bg color
+padding on top and right */
 header nav {
   float: right;
   background-color: #25272b;
@@ -29,6 +40,8 @@ header nav {
   padding-right: 15px;
 }
 
+/* a tag for font change with size, color, bolding and padding
+and bg change */
 header a {
   font-size: 20px;
   margin-left: 25px;
@@ -38,6 +51,8 @@ header a {
   padding: 5px;
 }
 
+/* styling when a tag gets hover
+change in text color and background color */
 header a:hover {
   color: #25272b;
   background-color: #669092;
@@ -45,6 +60,7 @@ header a:hover {
   padding: 5px;
 }
 
+/* heading image section */
 .heading-image {
   height: 300px;
   width: 100%;
@@ -52,7 +68,10 @@ header a:hover {
   background-size: cover;
   background-position: center;
 }
+/* header section ends here */
 
+/* main section starts here */
+/* image in main, my photo */
 #me {
   display: flex;
   margin-left: 10px;
@@ -77,8 +96,9 @@ header a:hover {
   align-items: center;
 }
 
+/* changed image size to better fit into the page */
 .main-project {
-  flex: 2 1 100%;
+  max-width: 1010px;
 }
 
 .sub-project {
@@ -109,12 +129,15 @@ img {
   border-width: 10px;
   border-color: #87c5c7;
 }
+/* main section ends here */
 
+/* to all p tags in main and footer */
 p {
   font-size: 20px;
   color: #3c4e6c;
 }
 
+/* footer starts here */
 footer {
   padding: 30px;
   clear: both;
@@ -125,6 +148,7 @@ footer {
   justify-content: space-between;
 }
 
+/* contact section to fit links nicely (the a tags) */
 #contact-section {
   display: inline-block;
   flex-wrap: wrap;
@@ -139,6 +163,7 @@ footer h4 {
   border: 10px;
 }
 
+/* specifically for footer p and a tag */
 footer p,
 footer a {
   display: inline-block;
@@ -149,14 +174,32 @@ footer a {
   flex-wrap: wrap;
 }
 
+/* a tags in footer when hovered
+text color and bg color, remove decoration (bullet point) and add padding */
 footer a:hover {
   color: #ebebf6;
   background-color: #3c4e6c;
   text-decoration: none;
   padding: 5px;
 }
+/* footer ends here */
+
+/* different media size */
+/* they are designed to adjust little bit from the original css and to better fit into the page */
+@media screen and (max-width: 1200px) {
+  .main-project {
+    max-width: 710px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main-project {
+    max-width: 610px;
+  }
+}
 
 @media screen and (max-width: 768px) {
+  /* flex direction changed */
   header,
   main,
   footer {
@@ -171,14 +214,17 @@ footer a:hover {
   header a {
     margin: 5px;
   }
+
+  /* flex direction changed */
   #work-section {
     flex-direction: column;
     align-items: center;
   }
 
   .main-project {
-    align-items: center;
     flex: 1 1 100%;
+    width: 510px;
+    height: 510px;
   }
 
   .sub-project {
@@ -188,13 +234,19 @@ footer a:hover {
     align-content: center;
   }
 
-  #about, #work, #me {
+  #about,
+  #work,
+  #me {
     margin: 10px;
   }
+
+  /* flex direction changed */
   #about-section {
     flex-direction: column;
     align-items: center;
   }
+
+  /* flex direction changed */
   footer h4 {
     margin: 0px;
     border: 0px;
@@ -202,6 +254,7 @@ footer a:hover {
     align-items: center;
   }
 
+  /* flex direction changed */
   footer p,
   footer a {
     flex-direction: column;
